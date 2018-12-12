@@ -2,8 +2,8 @@
 var bubbles = [];
 var canvas;
 var h1;
-var m = 20;
-var n = 60;
+var m = 40;
+var n = 40;
 var song;
 var song2;
 
@@ -30,7 +30,7 @@ function setup(){
 
 
 function mousePressed(){
-	h1.html("Obviously your finger is out of control!");
+	h1.html("Well...obviously your finger is out of control!");
     createP("IT IS TIME TO SLEEP!!!IT IS TIME TO SLEEP!!!IT IS TIME TO SLEEP!IT IS TIME TO SLEEP!!!");
   let r = random(10,50);
 	var b = new Bubble (mouseX,mouseY,r);
