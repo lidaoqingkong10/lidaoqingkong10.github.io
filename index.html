@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  <style>
+    p{
+      background-color:red;
+      color: white;
+      padding:8px;
+    
+    }
+    h1{
+      color:white;
+    }
+     * {
+        margin: 0;
+        padding: 0;
+      }
+      html, body {
+        height: 100%;
+        width: 100%;
+      }
+      canvas {
+        display: block;
+        background: #D6F8FF;
+      }
+  </style><script type="text/javascript">
+      $(function() {
+        //添加窗口尺寸改变响应监听
+        $(window).resize(resizeCanvas);
+        //页面加载后先设置一下canvas大小
+        resizeCanvas();
+      });
+ 
+      //窗口尺寸改变响应（修改canvas大小）
+      function resizeCanvas() {
+        $("#myCanvas").attr("width", $(window).get(0).innerWidth);
+        $("#myCanvas").attr("height", $(window).get(0).innerHeight);
+      };
+    </script></head>
+  
+  
+    
+  <body>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
